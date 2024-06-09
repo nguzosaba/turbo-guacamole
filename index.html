@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>  
+    <title>Nguzo Saba Institution</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+<style>
+body {
+font-family: "Outfit", century-gothic;
+}
+</style>
+</head>
+
+<body class="container min-w-full">
+
+    <div class="bg-white h-screen">
+        <!-- navigation -->
+        <nav class="bg-[#003366] text-white px-8 py-4 flex justify-between items-center  mx-auto">
+            <div class="flex items-center">
+                <img class="w-16 cursor-pointer" src="images/logo.png" alt="...">
+                <h1 class="text-2xl px-3">Nguzo Saba Institute</h1>
+            </div>
+            <div
+                class="nav-links duration-500 md:static absolute bg-[#003366] md:min-h-fit h-full left-0 top-[-100%] md:w-auto  w-full flex items-center px-5">
+                <ul class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8">
+                    <li>
+                        <a class="hover:text-gray-500" href="#">Courses</a>
+                    </li>
+                    <li>
+                        <a class="hover:text-gray-500" href="#">School Life</a>
+                    </li>
+                    <li>
+                        <a class="hover:text-gray-500" href="#">Admissions</a>
+                    </li>
+                    <li>
+                        <a class="hover:text-gray-500" href="#">Fees</a>
+                    </li>
+                    <li>
+                        <a class="hover:text-gray-500" href="#">About Us</a>
+                    </li>
+                    <li>
+                        <button class="bg-[#006666] text-white px-5 py-2 rounded-full hover:bg-[#87acec] md:hidden block">Contact Us</button>
+                    </li>
+                </ul>
+            </div>
+            <div class="flex items-center gap-6">
+                <button class="bg-[#006666] text-white px-5 py-2 rounded-full hover:bg-[#87acec] md:block hidden">Contact Us</button>
+                <ion-icon onclick="onToggleMenu(this)" name="menu" class="text-3xl cursor-pointer md:hidden"></ion-icon>
+            </div>
+        </nav>
+
+        <!-- hero section -->
+        <section class="bg-[url('images/IMG_1654.jpg')] bg-center bg-cover">
+            <div class="h-screen flex justify-center">
+                <h1 class="text-yellow-500 md:text-4xl text-2xl mt-3">Transformation by the renewal of the mind</h1>
+            </div>
+        </section>
+    </div>
+
+    <main class="min-h-screen bg-white mx-auto flex md:flex-row flex-col justify-center">
+	<div class="w-[30%] p-10">
+		<img class="md:w-80" src="images/hero-image-2.jpg" alt="..." />
+		<div>
+			<h2 class="text-3xl">Values</h2>
+			<ul>
+				<li>Panctuality</li>
+				<li>Honesty</li>
+			</ul>
+		</div>
+	</div>
+	<div class="w-[30%] p-10">
+		<img class="w-80" src="images/hero-image-2.jpg" alt="..." />
+		<div>
+			<h2 class="text-2xl">Principles</h2>
+			<ul>
+				<li>Faith</li>
+				<li>Unity</li>
+				<li>Creativity</li>
+				<li>Cooperative Economics</li>
+				<li>Purpose</li>
+				<li>Self-determination</li>
+				<li>Collective Work and Responsibility</li>
+			</ul>
+		</div>
+	</div>
+	<div class="w-[30%] p-10">
+		<img class="w-80" src="images/hero-image-2.jpg" alt="..." />
+		<div>
+			<h2 class="text-2xl">Learning</h2>
+			<p>Praxis Cycle</p>
+		</div>
+	</div>       
+    </main>
+
+    <footer class="bg-[#003366] h-fit text-white">
+        <div class="w-[80%] mx-auto py-5">
+            <div class="flex justify-around">
+                <div class="">
+                    <ul>
+                        <li>
+				<a href="#">Terms & Conditions</a>
+			</li>
+                        <li>
+				<a href="#">Data Protection Policy</a>
+			</li>
+                        <li>
+				<a href="#">Privacy Policy</a>
+			</li>
+                        <li>
+				<a href="#">Complaints</a>
+			</li>
+                        <li>
+				<a href="#">Careers</a>
+			</li>
+                    </ul>
+                </div>
+    
+                <div class="">
+                    <ul>
+                        <li>Lorem.</li>
+                        <li>In?</li>
+                        <li>Ratione?</li>
+                        <li>Veritatis.</li>
+                        <li>Deleniti!</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="text-center mt-3">
+                &copy; 2024 Nguzo Saba Institute, 2 Monza Street, Village 1 North, Khayelitsha, 7784
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const navLinks = document.querySelector('.nav-links')
+        function onToggleMenu(e){
+            e.name = e.name === 'menu' ? 'close' : 'menu'
+            navLinks.classList.toggle('top-0')
+        }
+    </script>
+
+</body>
+
+</html>
